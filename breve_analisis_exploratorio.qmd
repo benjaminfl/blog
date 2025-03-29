@@ -1,0 +1,37 @@
+---
+title: "Breve Análisis Exploratorio"
+format:
+  html:
+    output-file: "index"
+editor: source
+---
+
+## Iris
+
+```{r}
+head(iris, 10)
+```
+
+Carga librerias
+
+```{r}
+library(tidyverse)
+```
+
+
+## Gráfica
+
+```{r}
+
+
+iris |> 
+ggplot(aes(x=Petal.Length,y=Petal.Width,color=Species))+
+  geom_point()
+```
+
+### Sumario de datos
+
+```{r}
+summary(iris)
+```
+
